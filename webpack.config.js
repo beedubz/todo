@@ -16,4 +16,13 @@ module.exports = {
       template: "./src/template.html", // Use this file as a blueprint
     }),
   ],
+
+  module: {
+    rules: [
+      {
+        test: /\.css$/i, // Look for .css files
+        use: ["style-loader", "css-loader"], // Process them with these loaders
+      },
+    ],
+  },
 };

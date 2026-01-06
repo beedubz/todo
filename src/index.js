@@ -6,20 +6,7 @@
 //Expand a single todo to see/edit its details.
 //Delete a todo.
 
-import Projects from "./projects.js";
+import { Projects } from "./showitems.js";
+import "./style.css";
 
 Projects();
-
-//toDo object
-class toDo {
-  constructor(title, description, dueDate, priority, notes) {
-    this.title = title;
-    this.description = description;
-    this.dueDate = dueDate;
-    this.priority = priority;
-    this.notes = notes;
-  }
-}
-
-//create todo list
-let todoList = [];
